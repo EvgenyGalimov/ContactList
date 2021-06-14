@@ -11,13 +11,12 @@ class DetailedContactsInfoViewController: UIViewController {
 
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var contactPhoto: UIImageView!
     
     var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = person.contact
         phoneNumberLabel.text = person.phone
         emailLabel.text = person.mail
     }
