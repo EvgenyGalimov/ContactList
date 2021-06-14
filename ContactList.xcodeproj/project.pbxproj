@@ -13,6 +13,9 @@
 		CE649899267383D5006F4FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649897267383D5006F4FFC /* Main.storyboard */; };
 		CE64989B267383D6006F4FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE64989A267383D6006F4FFC /* Assets.xcassets */; };
 		CE64989E267383D6006F4FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE64989C267383D6006F4FFC /* LaunchScreen.storyboard */; };
+		CE6498A6267388D3006F4FFC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6498A5267388D3006F4FFC /* Person.swift */; };
+		CE6498A826739C5C006F4FFC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6498A726739C5C006F4FFC /* DataManager.swift */; };
+		CED9B48926774A1700FAB6B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9B48826774A1700FAB6B4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CE64989A267383D6006F4FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE64989D267383D6006F4FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE64989F267383D6006F4FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6498A5267388D3006F4FFC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CE6498A726739C5C006F4FFC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CED9B48826774A1700FAB6B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		CE649890267383D5006F4FFC /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				CE6498A726739C5C006F4FFC /* DataManager.swift */,
 				CE649891267383D5006F4FFC /* AppDelegate.swift */,
 				CE649893267383D5006F4FFC /* SceneDelegate.swift */,
 				CE649895267383D5006F4FFC /* ViewController.swift */,
@@ -63,6 +70,8 @@
 				CE64989A267383D6006F4FFC /* Assets.xcassets */,
 				CE64989C267383D6006F4FFC /* LaunchScreen.storyboard */,
 				CE64989F267383D6006F4FFC /* Info.plist */,
+				CE6498A5267388D3006F4FFC /* Person.swift */,
+				CED9B48826774A1700FAB6B4 /* DetailViewController.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE649896267383D5006F4FFC /* ViewController.swift in Sources */,
+				CE6498A826739C5C006F4FFC /* DataManager.swift in Sources */,
 				CE649892267383D5006F4FFC /* AppDelegate.swift in Sources */,
+				CED9B48926774A1700FAB6B4 /* DetailViewController.swift in Sources */,
+				CE6498A6267388D3006F4FFC /* Person.swift in Sources */,
 				CE649894267383D5006F4FFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BR799XUQ;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BR799XUQ;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
